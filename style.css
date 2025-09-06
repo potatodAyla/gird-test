@@ -1,0 +1,49 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px;
+  gap: 20px;
+  width: 100px;
+  height: 100px;
+  background-color: palevioletred;
+  text-align: center; /* horizontal center */
+  line-height: 100px; /* vertical center */
+}
+
+.item {
+  background-color: #f0a500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: white;
+  transition: transform 0.3s, background-color 0.3s;
+  cursor: pointer;
+}
+
+.item:hover {
+  background-color: #1d3557;
+  transform: scale(1.1);
+}
+
+.A {
+  grid-row: span 2;
+  background-color: #e63946;
+}
+.B {
+  background-color: #457b9d;
+}
+.C {
+  background-color: #2a9d8f;
+}
+.D {
+  background-color: #f4a261;
+}
+.E {
+  background-color: #8d99ae;
+}
+
+.F {
+  grid-column: span 3;
+  background-color: aqua;
+}
